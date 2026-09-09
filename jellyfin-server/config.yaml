@@ -17,7 +17,11 @@ video: true
 ports:
   8096/tcp: 8096
   8920/tcp: null
+  7359/udp: 7359
+  1900/udp: null
 ports_description:
   8096/tcp: Jellyfin web and media port
   8920/tcp: Jellyfin TLS port, must be configured in the server first
+  7359/udp: Client discovery port
+  1900/udp: DLNA/SSDP discovery port, used by the DLNA plugin
 image: ghcr.io/mdvorak/jellyfin-server
