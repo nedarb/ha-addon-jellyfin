@@ -1,6 +1,5 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
-ARG BUILD_FROM
-FROM $BUILD_FROM
+FROM jellyfin/jellyfin:12.0.20260908-012347
 
 ENV JELLYFIN_DATA_DIR=/share/jellyfin
 ENV JELLYFIN_CONFIG_DIR=/share/jellyfin/config

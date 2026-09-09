@@ -1,5 +1,129 @@
 # Changelog
 
+## [2.1.4](https://github.com/mdvorak/ha-addon-jellyfin/compare/v2.1.3...v2.1.4) (2026-09-08)
+
+* **deps:** bump jellyfin/jellyfin to 12.0.20260908-012347 in /jellyfin-server ([bfb4722](https://github.com/mdvorak/ha-addon-jellyfin/commit/bfb4722edc4fb2aed7efb5d69b472b434c31cf33))
+
+### Bug Fixes
+
+* **deps:** bump actions/checkout from 6 to 7 ([bb5696f](https://github.com/mdvorak/ha-addon-jellyfin/commit/bb5696fd2a50a432c7fc149d66ca7044c58dcd24))
+* **deps:** bump home-assistant/builder ([b37a4ee](https://github.com/mdvorak/ha-addon-jellyfin/commit/b37a4eec9713ca1f11127f6c958aa2589b083b9e))
+
+## [2.1.3](https://github.com/mdvorak/ha-addon-jellyfin/compare/v2.1.2...v2.1.3) (2026-06-07)
+
+
+### Bug Fixes
+
+* **deps:** bump jellyfin/jellyfin in /jellyfin-server ([fcc6d36](https://github.com/mdvorak/ha-addon-jellyfin/commit/fcc6d36703b5632a380a1bd264bab70201f2f29a))
+
+## [2.1.2](https://github.com/mdvorak/ha-addon-jellyfin/compare/v2.1.1...v2.1.2) (2026-05-25)
+
+
+### Bug Fixes
+
+* **deps:** bump jellyfin/jellyfin in /jellyfin-server ([d126ec0](https://github.com/mdvorak/ha-addon-jellyfin/commit/d126ec09381e042ff0e0666327529d1c53fd38d3))
+
+## [2.1.1](https://github.com/mdvorak/ha-addon-jellyfin/compare/v2.1.0...v2.1.1) (2026-05-22)
+
+
+### Bug Fixes
+
+* **deps:** bump jellyfin/jellyfin in /jellyfin-server ([37ec3e3](https://github.com/mdvorak/ha-addon-jellyfin/commit/37ec3e3708f91221f78b3befe68a3000a6602ba3))
+
+
+## [2.1.0](https://github.com/mdvorak/ha-addon-jellyfin/compare/v2.0.8...v2.1.0) (2026-04-06)
+
+### [Jellyfin Server 10.11.9](https://github.com/jellyfin/jellyfin/releases/tag/v10.11.9)
+
+We are pleased to announce the latest stable release of Jellyfin, version 10.11.9! This minor release brings several bugfixes to improve your Jellyfin experience. As always, please ensure you take a full backup before upgrading!
+
+You can find more details about and discuss this release [on our forums](https://forum.jellyfin.org/t-new-jellyfin-server-web-release-10-11-9).
+
+#### Changelog (5)
+
+##### 📈 General Changes
+* Fix rate control in av1_amf encoder [PR #16819], by @nyanmisaka
+* Fix UserManager after EFcore refactor [PR #15368], by @JPVenson
+* Update log for user session related concurrency update fails [PR #16845], by @JPVenson
+* Allow HDR10 for VPP tonemapping [PR #16718], by @gnattu
+* Use strict QSV CPB size for less powerful H.264 decoder [PR #16743], by @nyanmisaka
+
+### Features
+
+* migrate to new home-assistant/builder actions pattern ([6dfb78d](https://github.com/mdvorak/ha-addon-jellyfin/commit/6dfb78dae6348e8b3d398064e88a267d2a1dc8d1))
+
+
+### Bug Fixes
+
+* **deps:** bump jellyfin/jellyfin in /jellyfin-server to 10.11.8 ([6a38b89](https://github.com/mdvorak/ha-addon-jellyfin/commit/6a38b89026f424f09be222ab7a78f6869584ab9c))
+* push backward-compat arch-suffixed image aliases ([4a7a622](https://github.com/mdvorak/ha-addon-jellyfin/commit/4a7a622c118f409b32053bfa4b607376117ba66e))
+
+### [Jellyfin Server 10.11.8](https://github.com/jellyfin/jellyfin/releases/tag/v10.11.8)
+
+We are pleased to announce the latest stable release of Jellyfin, version 10.11.8! This minor release brings several bugfixes to improve your Jellyfin experience. As always, please ensure you take a full backup before upgrading!
+
+**Note**: This release fixes several regressions from 10.11.7, with the goal to get people onto an updated release due to the forthcoming (t-minus 9 days) release of the GHSAs/CVEs that were fixed in 10.11.7. Please upgrade to this release as soon as you can.
+
+You can find more details about and discuss this release [on our forums](https://forum.jellyfin.org/t-new-jellyfin-server-web-release-10-11-8).
+
+#### Changelog (3)
+
+##### 📈 General Changes
+* Handle folders without associated library in FixLibrarySubtitleDownloadLanguages [PR #16540], by @Shadowghost
+* Fix subtitle saving [PR #16539], by @MBR-0001
+* Fix querying media with language filters [PR #16538], by @MBR-0001
+
+
+## [2.0.8](https://github.com/mdvorak/ha-addon-jellyfin/compare/v2.0.7...v2.0.8) (2026-04-06)
+
+
+### Bug Fixes
+
+* **deps:** bump jellyfin/jellyfin from 10.11.6 to 10.11.7 ([fe4818c](https://github.com/mdvorak/ha-addon-jellyfin/commit/fe4818c2624f7926e7a0de1cf80c6671afe36603))
+
+### [Jellyfin Server 10.11.7](https://github.com/jellyfin/jellyfin/releases/tag/v10.11.7)
+
+We are pleased to announce the latest stable release of Jellyfin, version 10.11.7! This minor release brings several bugfixes to improve your Jellyfin experience. As always, please ensure you take a full backup before upgrading!
+
+**WARNING**: This release contains several **extremely important security fixes**. These vulnerabilities will be disclosed in **14 days** as per our security policy. Users of **all versions prior to 10.11.7 are advised to upgrade immediately**.
+
+You can find more details about and discuss this release [on our forums](https://forum.jellyfin.org/t-new-jellyfin-server-web-release-10-11-7).
+
+#### Changelog (29)
+
+##### :lock: Security
+* Fix for GHSA-j2hf-x4q5-47j3, by @Shadowghost 
+* Fix for GHSA-8fw7-f233-ffr8, by @Shadowghost 
+* Fix for GHSA-v2jv-54xj-h76w, by @Shadowghost 
+* Fix for GHSA-jh22-fw8w-2v9x, by @Shadowghost 
+
+##### 📈 General Changes
+* Fix CA1810 build error [PR #16522], by @Bond-009
+* Fix Null was not checked before using the H264 profile [PR #16519], by @nyanmisaka
+* Remove -copyts and add -flush_packets 1 to subtitle extraction [PR #16440], by @Molier
+* Fix lint issue [PR #16514], by @theguymadmax
+* Fix nullref ex in font handling [PR #16369], by @Bond-009
+* Fix restore backup metadata location [PR #16425], by @theguymadmax
+* Fix NFO saver using wrong provider ID for collectionnumber [PR #16449], by @theguymadmax
+* Fix readrate options in FFmpeg 8.1 [PR #16423], by @nyanmisaka
+* Apply analyzeduration and probesize for subtitle streams to improve codec parameter detection [PR #16293], by @IceStormNG
+* Fix filter detection in FFmpeg 8.1 [PR #16392], by @nyanmisaka
+* Fix subtitle extraction caching empty files [PR #16257], by @lowbit
+* Fix hls segment length adjustment for remuxed content [PR #16341], by @crimsonspecter
+* Fix broken library subtitle download settings [PR #16204], by @MBR-0001
+* Checkpoint WAL before moving library.db in migration [PR #16253], by @theguymadmax
+* Fix nullref in Season.GetEpisodes when the season is detached from a series [PR #16150], by @dfederm
+* Reattach user data after item removal during library scan [PR #16227], by @dfederm
+* Deduplicate provider IDs during MigrateLibraryDb migration [PR #16226], by @dfederm
+* Skip image checks for empty folders [PR #16231], by @theguymadmax
+* Fix TMDB image URLs missing size parameter [PR #16116], by @saltpi
+* Fix random sort returning duplicate items [PR #16098], by @theguymadmax
+* Fix SessionInfoWebSocketListener not using SessionInfoDto [PR #16109], by @nielsvanvelzen
+* Fix HLS playlist generation for transcodes with fractional framerate [PR #16053], by @IceStormNG
+* Rehydrate cached UserData after reattachment [PR #16071], by @MarcoCoreDuo
+* Fix TMDB crew department mapping [PR #16066], by @theguymadmax
+* Revert hidden directory ignore pattern [PR #16077], by @theguymadmax
+
 ## [2.0.7](https://github.com/mdvorak/ha-addon-jellyfin/compare/v2.0.6...v2.0.7) (2026-01-19)
 
 
